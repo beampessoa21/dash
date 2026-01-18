@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
+import plotly as px
 import unicodedata
 
 st.set_page_config(
@@ -204,3 +204,4 @@ if pagina == "Condições Físicas":
     ].drop_duplicates()
 
     st.dataframe(matriz_cf.sort_values(["UN", "TAG"]), use_container_width=True)
+
